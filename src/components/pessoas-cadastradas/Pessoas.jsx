@@ -13,7 +13,7 @@ export default function Pessoas() {
         api.get("")
         .then((resp) => setResposta(resp.data.results))
         .catch((erro) => {console.log("erro")})
-    },[botao])
+    },[botao]);
     
     valor = resposta.slice(0, 10);
 
